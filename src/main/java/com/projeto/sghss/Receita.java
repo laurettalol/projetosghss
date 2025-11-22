@@ -12,15 +12,15 @@ public class Receita {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
-	private Long id;
-    private Long pacienteId;
-    private Long profissionalId;
+	private int id;
+    private int pacienteId;
+    private int profissionalId;
     private String medicamentos;
     private String dataEmissao;
     
     
     //Constructor
-    public Receita(Long id, Long pacienteId, Long profissionalId, String medicamentos, String dataEmissao) {
+    public Receita(int id, int pacienteId, int profissionalId, String medicamentos, String dataEmissao) {
 		super();
 		this.id = id;
 		this.pacienteId = pacienteId;
@@ -30,27 +30,27 @@ public class Receita {
 	}
 
 	//Getters e Setters
-    public Long getId() {
+    public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
-	public Long getPacienteId() {
+	public int getPacienteId() {
 		return pacienteId;
 	}
 
-	public void setPacienteId(Long pacienteId) {
+	public void setPacienteId(int pacienteId) {
 		this.pacienteId = pacienteId;
 	}
 
-	public Long getProfissionalId() {
+	public int getProfissionalId() {
 		return profissionalId;
 	}
 
-	public void setProfissionalId(Long profissionalId) {
+	public void setProfissionalId(int profissionalId) {
 		this.profissionalId = profissionalId;
 	}
 

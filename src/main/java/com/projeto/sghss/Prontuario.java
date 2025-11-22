@@ -13,13 +13,13 @@ public class Prontuario {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
-	private Long id;
-	private Long pacienteId;
+	private int id;
+	private int pacienteId;
 	private String historicoMedico;
 	
 	
 	//Constructor
-	public Prontuario(Long id, Long pacienteId, String historicoMedico) {
+	public Prontuario(int id, int pacienteId, String historicoMedico) {
 		super();
 		this.id = id;
 		this.pacienteId = pacienteId;
@@ -32,19 +32,19 @@ public class Prontuario {
 		this.historicoMedico = historicoMedico;
 	}
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
-	public Long getPacienteId() {
+	public int getPacienteId() {
 		return pacienteId;
 	}
 
-	public void setPacienteId(Long pacienteId) {
+	public void setPacienteId(int pacienteId) {
 		this.pacienteId = pacienteId;
 	}
 

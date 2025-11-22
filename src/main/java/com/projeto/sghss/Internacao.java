@@ -12,15 +12,15 @@ public class Internacao {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
-	private Long id;
-    private Long pacienteId;
+	private int id;
+    private int pacienteId;
     private String dataEntrada;
     private String dataSaida;
     private String status; 
     
     
     //Constructor
-    public Internacao(Long id, Long pacienteId, String dataEntrada, String dataSaida, String status) {
+    public Internacao(int id, int pacienteId, String dataEntrada, String dataSaida, String status) {
 		super();
 		this.id = id;
 		this.pacienteId = pacienteId;
@@ -30,19 +30,19 @@ public class Internacao {
 	}
 
 	// Getters e Setters
-    public Long getId() {
+    public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
-	public Long getPacienteId() {
+	public int getPacienteId() {
 		return pacienteId;
 	}
 
-	public void setPacienteId(Long pacienteId) {
+	public void setPacienteId(int pacienteId) {
 		this.pacienteId = pacienteId;
 	}
 

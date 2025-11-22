@@ -12,13 +12,13 @@ public class Administrador {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
-	private Long id;
+	private int id;
     private String nome;
     private String cargo;
     
     
     //Constructor
-    public Administrador(Long id, String nome, String cargo) {
+    public Administrador(int id, String nome, String cargo) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -26,11 +26,11 @@ public class Administrador {
 	}
 
 	//Getters e Setters
-    public Long getId() {
+    public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

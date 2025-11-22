@@ -12,15 +12,15 @@ public class Consulta {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
-	private Long id;
-	private Long pacientId;
-	private Long profissionalId;
+	private int id;
+	private int pacientId;
+	private int profissionalId;
 	private String dataHora;
 	private String status;
 	
 	
 	//Constructor
-	public Consulta(Long id, Long pacientId, Long profissionalId, String dataHora, String status) {
+	public Consulta(int id, int pacientId, int profissionalId, String dataHora, String status) {
 		super();
 		this.id = id;
 		this.pacientId = pacientId;
@@ -29,22 +29,22 @@ public class Consulta {
 		this.status = status;
 	}
 	//Getters e Setters
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
-	public Long getPacientId() {
+	public int getPacientId() {
 		return pacientId;
 	}
-	public void setPacientId(Long pacientId) {
+	public void setPacientId(int pacientId) {
 		this.pacientId = pacientId;
 	}
-	public Long getProfissionalId() {
+	public int getProfissionalId() {
 		return profissionalId;
 	}
-	public void setProfissionalId(Long profissionalId) {
+	public void setProfissionalId(int profissionalId) {
 		this.profissionalId = profissionalId;
 	}
 	public String getDataHora() {

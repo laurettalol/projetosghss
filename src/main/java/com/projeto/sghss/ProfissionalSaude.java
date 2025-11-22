@@ -12,14 +12,14 @@ public class ProfissionalSaude {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
-	private Long id;
+	private int id;
     private String nome;
     private String crm;
     private String especialidade;
     
     
     //Constructor
-    public ProfissionalSaude(Long id, String nome, String crm, String especialidade) {
+    public ProfissionalSaude(int id, String nome, String crm, String especialidade) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -28,11 +28,11 @@ public class ProfissionalSaude {
 	}
 
 	//Getters e Setters
-    public Long getId() {
+    public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
