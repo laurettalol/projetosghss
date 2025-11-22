@@ -12,7 +12,7 @@ public class Paciente {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 
-	private Long id;
+	private int id;
 	private String nome; 
 	private String cpf; 
 	private String dataNascimento;
@@ -20,7 +20,7 @@ public class Paciente {
 	public Paciente() { }
 	 
 	// Constructor 
-	public Paciente(Long id, String nome, String cpf, String dataNascimento) {
+	public Paciente(int id, String nome, String cpf, String dataNascimento) {
 		super();
 		this.id = id; 
 		this.nome = nome; 
@@ -30,10 +30,10 @@ public class Paciente {
 	 } 
 	//Getters e setters 
 	
-	public Long getId() { 
+	public int getId() { 
 		return id;
 		} 
-	public void setId(Long id) { 
+	public void setId(int id) { 
 		this.id = id;
 		}
 	public String getNome() { 

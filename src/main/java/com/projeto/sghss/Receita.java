@@ -29,7 +29,7 @@ public class Receita {
 		this.dataEmissao = dataEmissao;
 	}
 
-	//Getter e Setters
+	//Getters e Setters
     public Long getId() {
 		return id;
 	}

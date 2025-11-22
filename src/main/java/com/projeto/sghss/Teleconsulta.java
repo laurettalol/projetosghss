@@ -12,15 +12,15 @@ public class Teleconsulta {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
-	private Long id;
-    private Long pacienteId;
-    private Long profissionalId;
+	private int id;
+    private int pacienteId;
+    private int profissionalId;
     private String linkVideo;
     private String dataHora;
 
      
     //Constructor    
-	public Teleconsulta(Long id, Long pacienteId, Long profissionalId, String linkVideo, String dataHora) {
+	public Teleconsulta(int id, int pacienteId, int profissionalId, String linkVideo, String dataHora) {
 		super();
 		this.id = id;
 		this.pacienteId = pacienteId;
@@ -30,26 +30,26 @@ public class Teleconsulta {
 	}
 
 	//Getters e Setters
-    public Long getId() {
+    public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
-	public Long getPacienteId() {
+	public int getPacienteId() {
 		return pacienteId;
 	}
 
-	public void setPacienteId(Long pacienteId) {
+	public void setPacienteId(int pacienteId) {
 		this.pacienteId = pacienteId;
 	}
-	public Long getProfissionalId() {
+	public int getProfissionalId() {
 		return profissionalId;
 	}
 
-	public void setProfissionalId(Long profissionalId) {
+	public void setProfissionalId(int profissionalId) {
 		this.profissionalId = profissionalId;
 	}
 
