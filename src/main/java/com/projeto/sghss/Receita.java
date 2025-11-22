@@ -14,17 +14,17 @@ public class Receita {
 	
 	private int id;
     private int pacienteId;
-    private int profissionalId;
+    private int profissionalSaudeId;
     private String medicamentos;
     private String dataEmissao;
     
     
     //Constructor
-    public Receita(int id, int pacienteId, int profissionalId, String medicamentos, String dataEmissao) {
+    public Receita(int id, int pacienteId, int profissionalSaudeId, String medicamentos, String dataEmissao) {
 		super();
 		this.id = id;
 		this.pacienteId = pacienteId;
-		this.profissionalId = profissionalId;
+		this.profissionalSaudeId = profissionalSaudeId;
 		this.medicamentos = medicamentos;
 		this.dataEmissao = dataEmissao;
 	}
@@ -46,12 +46,12 @@ public class Receita {
 		this.pacienteId = pacienteId;
 	}
 
-	public int getProfissionalId() {
-		return profissionalId;
+	public int getProfissionalSaudeId() {
+		return profissionalSaudeId;
 	}
 
-	public void setProfissionalId(int profissionalId) {
-		this.profissionalId = profissionalId;
+	public void setProfissionalSaudeId(int profissionalSaudeId) {
+		this.profissionalSaudeId = profissionalSaudeId;
 	}
 
 	public String getMedicamentos() {

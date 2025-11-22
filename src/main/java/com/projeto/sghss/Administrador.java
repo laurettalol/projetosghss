@@ -14,7 +14,6 @@ public class Administrador {
 	
 	private int id;
     private String nome;
-    private String cargo;
     
     
     //Constructor
@@ -22,7 +21,6 @@ public class Administrador {
 		super();
 		this.id = id;
 		this.nome = nome;
-		this.cargo = cargo;
 	}
 
 	//Getters e Setters
@@ -42,14 +40,7 @@ public class Administrador {
 		this.nome = nome;
 	}
 
-	public String getCargo() {
-		return cargo;
-	}
 
-	public void setCargo(String cargo) {
-		this.cargo = cargo;
-	}
-	
 	//Status da internação 
 	public void gerenciarInternacao(Internacao internacao, boolean finalizar) {
         if (finalizar) {

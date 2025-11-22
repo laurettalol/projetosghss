@@ -15,45 +15,35 @@ public class Prontuario {
 	
 	private int id;
 	private int pacienteId;
-	private String historicoMedico;
-	
+	private int consultaId;
 	
 	//Constructor
-	public Prontuario(int id, int pacienteId, String historicoMedico) {
+	public Prontuario(int id, int pacienteId, int consultaId) {
 		super();
 		this.id = id;
 		this.pacienteId = pacienteId;
-		this.historicoMedico = historicoMedico;
 	}
-
-	//Getters e Setters
-		
-	public void atualizar(String historicoMedico) {
-		this.historicoMedico = historicoMedico;
-	}
-
+	
+	// Getters e Setters
 	public int getId() {
 		return id;
 	}
-
 	public void setId(int id) {
 		this.id = id;
 	}
-
 	public int getPacienteId() {
 		return pacienteId;
 	}
-
 	public void setPacienteId(int pacienteId) {
 		this.pacienteId = pacienteId;
 	}
-
-	public String getHistoricoMedico() {
-		return historicoMedico;
+	public int getConsultaId() {
+		return consultaId;
 	}
-
-	public void setHistoricoMedico(String historicoMedico) {
-		this.historicoMedico = historicoMedico;
+	public void setConsultaId(int consultaId) {
+		this.consultaId = consultaId;
 	}
-
+	
+	
+	
 }

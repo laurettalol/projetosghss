@@ -14,17 +14,17 @@ public class Teleconsulta {
 	
 	private int id;
     private int pacienteId;
-    private int profissionalId;
+    private int profissionalSaudeId;
     private String linkVideo;
     private String dataHora;
 
      
     //Constructor    
-	public Teleconsulta(int id, int pacienteId, int profissionalId, String linkVideo, String dataHora) {
+	public Teleconsulta(int id, int pacienteId, int profissionalSaudeId, String linkVideo, String dataHora) {
 		super();
 		this.id = id;
 		this.pacienteId = pacienteId;
-		this.profissionalId = profissionalId;
+		this.profissionalSaudeId = profissionalSaudeId;
 		this.linkVideo = linkVideo;
 		this.dataHora = dataHora;
 	}
@@ -45,12 +45,12 @@ public class Teleconsulta {
 	public void setPacienteId(int pacienteId) {
 		this.pacienteId = pacienteId;
 	}
-	public int getProfissionalId() {
-		return profissionalId;
+	public int getProfissionalSaudeId() {
+		return profissionalSaudeId;
 	}
 
-	public void setProfissionalId(int profissionalId) {
-		this.profissionalId = profissionalId;
+	public void setProfissionalSaudeId(int profissionalSaudeId) {
+		this.profissionalSaudeId = profissionalSaudeId;
 	}
 
 	public String getLinkVideo() {

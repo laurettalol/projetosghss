@@ -13,18 +13,18 @@ public class Consulta {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
 	private int id;
-	private int pacientId;
-	private int profissionalId;
+	private int pacienteId;
+	private int profissionalSaudeId;
 	private String dataHora;
 	private String status;
 	
 	
 	//Constructor
-	public Consulta(int id, int pacientId, int profissionalId, String dataHora, String status) {
+	public Consulta(int id, int pacienteId, int profissionalSaudeId, String dataHora, String status) {
 		super();
 		this.id = id;
-		this.pacientId = pacientId;
-		this.profissionalId = profissionalId;
+		this.pacienteId = pacienteId;
+		this.profissionalSaudeId = profissionalSaudeId;
 		this.dataHora = dataHora;
 		this.status = status;
 	}
@@ -35,17 +35,17 @@ public class Consulta {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getPacientId() {
-		return pacientId;
+	public int getPacienteId() {
+		return pacienteId;
 	}
-	public void setPacientId(int pacientId) {
-		this.pacientId = pacientId;
+	public void setPacienteId(int pacientId) {
+		this.pacienteId = pacientId;
 	}
-	public int getProfissionalId() {
-		return profissionalId;
+	public int getProfissionalSaudeId() {
+		return profissionalSaudeId;
 	}
-	public void setProfissionalId(int profissionalId) {
-		this.profissionalId = profissionalId;
+	public void setProfissionalSaudeId(int profissionalSaudeId) {
+		this.profissionalSaudeId = profissionalSaudeId;
 	}
 	public String getDataHora() {
 		return dataHora;
